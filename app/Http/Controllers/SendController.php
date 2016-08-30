@@ -8,5 +8,7 @@ use App\Http\Requests;
 
 class SendController extends Controller
 {
-    //
+    function create() {
+        return view('partials.device.create');
+    }
 }
