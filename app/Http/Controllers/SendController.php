@@ -9,6 +9,11 @@ use App\Http\Requests;
 class SendController extends Controller
 {
     function create() {
-        return view('partials.device.create');
+        $devices = [
+            ['hash' => 'Salam'],
+            ['hash' => 'What']
+        ];
+
+        return view('partials.device.create', compact('devices'));
     }
 }
