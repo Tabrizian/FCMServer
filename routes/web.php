@@ -12,3 +12,4 @@
 */
 
 Route::resource('/send', 'SendController');
+Route::post('/sendMessage', 'SendController@send');
